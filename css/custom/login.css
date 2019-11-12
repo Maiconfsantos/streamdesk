@@ -1,0 +1,69 @@
+#area-login{
+	 position:absolute;
+	border-style: solid;
+
+	border-radius: 20px; 
+	
+	border-width: 1px;
+	border-color: grey;
+}
+
+.abcRioButton{
+	width: 100%!important;
+}
+
+
+
+#logo_central{
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+ 
+}
+
+
+#button-login{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+}
+
+
+
+
+@media(min-width: 1081px){
+
+	nav > a > img{
+		height: 30px;
+	}
+}
+
+@media(max-width: 1080px){
+	#footer{
+		margin-top: 19%;
+		font-size: calc(100% + 1vw + 1vh); 
+	}
+
+	#button-login{
+	  margin-top: 15%;
+	  font-size:calc(100% + 1vw + 1vh);
+	}
+
+	#text-navbar{
+		font-size:calc(100% + 1vw + 1vh);
+	}
+
+	nav > a > img{
+		height: 60px;
+	}
+}
+#divbutton{
+	text-align: center;
+	margin-top: 3%;
+}
+
+button{
+	width: 100%;
+}

@@ -1,0 +1,28 @@
+@media(min-width: 1081px){
+	nav > a > img{
+		height: 50px;
+	}
+
+	#text-navbar{
+		font-size:calc(50% + 1vw + 1vh);
+	}
+}
+
+@media(max-width: 1080px){	
+	nav > a > img{
+		height: 60px;
+	}
+
+	#text-navbar{
+		font-size:calc(100% + 1vw + 1vh);
+	}
+}
+
+
+.container{
+	margin-top: 3%;
+}
+
+.hidden{
+	visibility: hidden;
+}
