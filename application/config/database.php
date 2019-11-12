@@ -77,10 +77,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => '192.168.1.203',
-	'username' => 'Hercules',
-	'password' => 'aaa6e80f9d0b620a599b3a0fa21c220b',
-	'database' => 'login',
+	'hostname' => '185.201.10.94',
+	'username' => 'u130015149_admin',
+	'password' => 'Pokemon@10',
+	'database' => 'u130015149_streamdesk',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

@@ -15,14 +15,7 @@ class Login extends CI_Controller{
 
 	 public function index(){
 
-	 	if(base_url()=='http://appdev.facos.edu.br/Login/'){
-	 		$dados = array('ClientID' => '40171611764-5lnh5eer1omaeju4qlqm20m62bfiotp5.apps.googleusercontent.com');
-	 	}
-		else if(base_url()=='http://app.facos.edu.br/Login/'){
-	 		$dados = array('ClientID' => '523930581034-ush2bdn5t5tjtismrrco6b7figpe1ukf.apps.googleusercontent.com');
-	 	}
-
-	 	$this->load->template('login/login.php',$dados);
+	 	$this->load->template('login/login.php');
 	 	$this->load->view('login/esqueceusenhamodal');
 	 	$this->load->view('login/alteraSenhaModal');
 	 }

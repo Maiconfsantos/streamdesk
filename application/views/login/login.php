@@ -1,7 +1,4 @@
 <link rel="stylesheet" type="text/css" href="<?=css_url()?>custom/login.css">
-<script src="https://apis.google.com/js/platform.js?onload=onLoadCallback" async defer></script>
-<meta name="google-signin-client_id" content="<?php echo($ClientID)?>">
-
 
 <div class="container" >
 	<div class="row justify-content-center">

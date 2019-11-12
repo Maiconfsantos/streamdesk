@@ -23,7 +23,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://'.$_SERVER['HTTP_HOST'].'/Login/';
+
+if($_SERVER['HTTP_HOST']=='streamdesk.net')
+	$config['base_url'] = 'http://'.$_SERVER['HTTP_HOST'].'/';
+
+else $config['base_url'] = 'http://'.$_SERVER['HTTP_HOST'].'/sd/';
 
 /*
 |--------------------------------------------------------------------------
