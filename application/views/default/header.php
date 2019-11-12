@@ -50,7 +50,7 @@
     <nav class="navbar navbar-dark bg-dark">
   <a id='text-navbar' class="navbar-brand" href="#" align="center">
     <img src="<?=asset_url()?>/imgs/logo-cnec-transparente.png") " class="d-inline-block align-top" alt="">
-    Sistemas</a>
+    Stream Desk</a>
 
     <form action="<?=base_url()?>Logout" class="form-inline my-2 my-lg-0">
       <button id='logoutbutton' class="btn btn-outline-light my-2 my-sm-0" type="submit">logout</button>

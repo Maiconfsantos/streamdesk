@@ -3,7 +3,7 @@
 <div class="container" >
 	<div class="row justify-content-center">
 		<div class="col-11 col-lg-6" id="area-login">
-     		 <img id='logo_central' src="<?=asset_url()?>/imgs/logo-cnec-grande.png" />
+     		 <img id='logo_central' src="<?=asset_url()?>/imgs/logo.jpg" />
 
          <!--
      		 <button onclick="alert2()" id="button-login" type="button" class="btn btn-danger btn-lg btn-block">Acesso com o email Institucional</button>
@@ -48,13 +48,9 @@
         <button type="submit" class="btn btn-secondary" data-toggle="modal" data-target="#alteraSenhaModal">Alterar Senha</button>
       </div>
     </div>
-   
-
-
-
-     		 <div id='footer' class="footer-copyright text-center py-3">© 2019 UNICNEC Osório:
-      <a href="http://educacaosuperior.cnec.br/osorio"> educacaosuperior.cnec.br</a>
-    </div>
+  
+     		 <div id='footer' class="footer-copyright text-center py-3">© 2019 Maicon Flor dos Santos
+        </div>
 
     	</div>
 	</div>
