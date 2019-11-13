@@ -11,11 +11,16 @@ class Login extends CI_Controller{
         if($this->session->userdata('logged_in') == '1'){
         	redirect("/Home/");
         }
+       
     }
 
-	 public function index(){
+	 public function index($lg='en_us'){
 
-	 	$this->load->template('login/login.php');
+	 	url_trasform();	
+	 	
+	 	$text = get_text('login',$lg);
+
+	 	$this->load->template('login/login.php', $text);
 	 	$this->load->view('login/esqueceusenhamodal');
 	 	$this->load->view('login/alteraSenhaModal');
 	 }

@@ -29,7 +29,7 @@
 
           <div class="row justify-content-md-center">
             <div class="col-md-12 col-lg-6" id='divbutton'>
-              <button type="submit" class="btn btn-primary">Login</button>
+              <button type="submit" class="btn btn-primary"><?php echo($login_button)?></button>
             </div>
           </div>
       </form>
