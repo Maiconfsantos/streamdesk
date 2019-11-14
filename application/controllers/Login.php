@@ -29,6 +29,7 @@ class Login extends CI_Controller{
 
 	 public function log_in(){
 
+	 	$email = $_POST['email'];
 	 	$pass = md5($_POST['senha']);
 
 	 	$this->load->model('Login_model');
