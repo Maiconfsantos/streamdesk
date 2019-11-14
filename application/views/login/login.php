@@ -49,7 +49,7 @@
       </div>
     </div>
   
-     		 <div id='footer' class="footer-copyright text-center py-3">© 2019 Maicon Flor dos Santos
+     		 <div id='footer' class="footer-copyright text-center py-3"><a href='<?=base_url()?>Account/create'><?php echo($create_account)?></a>
         </div>
 
     	</div>

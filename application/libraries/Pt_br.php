@@ -20,6 +20,13 @@ class Pt_br{
 			'new_pass' => 'Nova Senha',
 			'new_pass_tip' => 'Informe a sua nova senha',
 			'new_pass_again_tip' => 'Informe a sua nova senha novamente',
+			'create_account'=>'Criar nova conta',
+			'create_accounte_buttom' =>'Criar Conta',
+			'new_email_tip' => 'Informe o seu Email',
+			'full_name' => 'Nome Completo',
+			'full_name_tip' => 'Informe o seu nome completo',
+			'pass_again_tip' => 'Informe a sua senha novamente',
+			'not_equal_password_warning' => 'As senhas não são iguais',
 		);
 
 

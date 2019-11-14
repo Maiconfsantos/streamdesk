@@ -20,6 +20,13 @@ class EN_us{
 			'new_pass' => 'New Password',
 			'new_pass_tip' => 'Enter your new password',
 			'new_pass_again_tip' => 'Enter your new password again',
+			'create_account'=>'Sign Up',
+			'create_accounte_buttom' => 'Create account',
+			'new_email_tip' => 'Enter yout email',
+			'full_name' => 'Full name',
+			'full_name_tip' => 'Enter yout full name',
+			'pass_again_tip' => 'Enter yout password again',
+			'not_equal_password_warning' => 'Passwords dont matches'
 		);
 
 

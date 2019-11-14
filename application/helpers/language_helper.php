@@ -70,6 +70,7 @@ function login($base_text){
 		'pass_tip' => $base_text['pass_tip'],
 		'forget_password' => $base_text['forget_password'],
 		'change_password' => $base_text['change_password'],
+		'create_account' => $base_text['create_account'],
 	);
 
 	return $data;
@@ -100,6 +101,27 @@ function modal_change_password($base_text){
 		'new_pass_tip' => $base_text['new_pass_tip'],
 		'new_pass_again_tip' => $base_text['new_pass_again_tip'],
 		'close_buttom' => $base_text['close_buttom'],
+
+	);
+
+	return $data;
+}
+
+function create_account($base_text){
+	$data = array(
+		'email' => $base_text['email'],
+		'new_email_tip' => $base_text['new_email_tip'],
+		'close_buttom' => $base_text['close_buttom'],
+		'create_accounte_buttom' => $base_text['create_accounte_buttom'],
+		'full_name' => $base_text['full_name'],
+		'full_name_tip' => $base_text['full_name_tip'],
+		'user' => $base_text['user'],
+		'user_tip' => $base_text['user_tip'],
+		'pass' => $base_text['pass'],
+		'pass_tip' => $base_text['pass_tip'],
+		'pass_again_tip' => $base_text['pass_again_tip'],
+		'not_equal_password_warning' => $base_text['not_equal_password_warning'],
+		
 
 	);
 

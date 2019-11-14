@@ -32,6 +32,10 @@ class User_model extends CI_model{
 		$this->db->update('usuarios');
 	}
 
+	public function create_account($data){
+		$this->db->insert('usuarios', $data);
+	}
+
 
 	
 
