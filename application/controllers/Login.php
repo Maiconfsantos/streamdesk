@@ -29,15 +29,14 @@ class Login extends CI_Controller{
 
 	 public function log_in(){
 
-	 	$user = $_POST['usuario'];
 	 	$pass = md5($_POST['senha']);
 
 	 	$this->load->model('Login_model');
 
-	 	$dados = $this->Login_model->get_dados_user_login($user, $pass);
+	 	$dados = $this->Login_model->get_dados_user_login($email, $pass);
 
 	 	if(is_null($dados)){
-	 		$this->session->set_flashdata("error","Usuário ou senha errada");
+	 		$this->session->set_tempdata("error","Usuário ou senha errada",3);
 					redirect('/');
 	 	}
 

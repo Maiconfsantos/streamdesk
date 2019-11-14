@@ -13,8 +13,8 @@
           <div class="row justify-content-md-center">
             <div class="col-md-12 col-lg-6">
               <div class="form-group">
-                  <label for="usuario"><?php echo($user)?></label>
-                  <input type="text" class="form-control" id="usuario" aria-describedby="usuario" name='usuario' placeholder="<?php echo($user_tip)?>">
+                  <label for="email"><?php echo($email)?></label>
+                  <input type="text" class="form-control" id="email" aria-describedby="email" name='email' placeholder="<?php echo($email_tip)?>">
               </div>
             </div>
           </div>

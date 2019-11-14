@@ -64,8 +64,8 @@ function get_text($page,$lg){
 function login($base_text){
 	$data = array(
 		'login_button' => $base_text['login-button'],
-		'user' => $base_text['user'],
-		'user_tip' => $base_text['user_tip'],
+		'email' => $base_text['email'],
+		'email_tip' => $base_text['email_tip'],
 		'pass' => $base_text['pass'],
 		'pass_tip' => $base_text['pass_tip'],
 		'forget_password' => $base_text['forget_password'],
