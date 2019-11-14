@@ -2,7 +2,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="alteraSenhaModal">Alterar minha senha</h5>
+        <h5 class="modal-title" id="alteraSenhaModal"><?php echo($change_password)?></h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -10,33 +10,33 @@
       <form action="<?php echo base_url()?>Senha/alterar_senha_solicitacao" method='Post'>
         <div class="modal-body">
             <div class="form-group">
-              <label for="usuario">Usuario</label>
+              <label for="usuario"><?php echo($user)?></label>
               <input type="text" class="form-control" id="usuario" name="usuario" required="true">
-              <small id="usuariolHelp" class="form-text text-muted">Informe o seu usuario</small>
+              <small id="usuariolHelp" class="form-text text-muted"><?php echo($user_tip)?></small>
             </div>
 
             <div class="form-group">
-              <label for="pass">Senha Atual</label>
+              <label for="pass"><?php echo($pass)?></label>
               <input type="password" class="form-control" id="pass" name="pass" required="true">
-              <small id="passHelp" class="form-text text-muted">Informe a sua senha atual</small>
+              <small id="passHelp" class="form-text text-muted"><?php echo($actual_pass_tip)?></small>
             </div>
 
             <div class="form-group">
-              <label for="new_pass_1">Nova senha</label>
+              <label for="new_pass_1"><?php echo($new_pass)?></label>
               <input type="password" class="form-control" id="new_pass_1" name="new_pass_1" required="true">
-              <small id="new_pass_1lHelp" class="form-text text-muted">Informe a sua nova senha</small>
+              <small id="new_pass_1lHelp" class="form-text text-muted"><?php echo($new_pass_tip)?></small>
             </div>
 
              <div class="form-group">
-              <label for="new_pass_2">Nova senha</label>
+              <label for="new_pass_2"><?php echo($new_pass)?></label>
               <input type="password" class="form-control" id="new_pass_2" name="new_pass_2" required="true">
-              <small id="new_pass_2Help" class="form-text text-muted">Informe a sua nova senha novamente</small>
+              <small id="new_pass_2Help" class="form-text text-muted"><?php echo($new_pass_again_tip)?></small>
             </div>
 
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-          <button type="submit" class="btn btn-primary">Alterar senha</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal"><?php echo($close_buttom)?></button>
+          <button type="submit" class="btn btn-primary"><?php echo($change_password)?></button>
         </div>
       </form>
     </div>

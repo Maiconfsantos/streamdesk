@@ -88,4 +88,22 @@ function modal_forget_password($base_text){
 	return $data;
 }
 
+
+function modal_change_password($base_text){
+	$data = array(
+		'change_password' => $base_text['change_password'],
+		'user' => $base_text['user'],
+		'user_tip' => $base_text['user_tip'],
+		'pass' => $base_text['pass'],
+		'actual_pass_tip' => $base_text['actual_pass_tip'],
+		'new_pass' => $base_text['new_pass'],
+		'new_pass_tip' => $base_text['new_pass_tip'],
+		'new_pass_again_tip' => $base_text['new_pass_again_tip'],
+		'close_buttom' => $base_text['close_buttom'],
+
+	);
+
+	return $data;
+}
+
 ?>

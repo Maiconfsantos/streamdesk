@@ -16,6 +16,10 @@ class Pt_br{
 			'email' => 'Email',
 			'close_buttom' => 'Fechar',
 			'request_password_buttom' => 'Solicitar Senha',
+			'actual_pass_tip' => 'Informe a sua senha atual',
+			'new_pass' => 'Nova Senha',
+			'new_pass_tip' => 'Informe a sua nova senha',
+			'new_pass_again_tip' => 'Informe a sua nova senha novamente',
 		);
 
 

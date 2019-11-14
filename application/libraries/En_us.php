@@ -16,6 +16,10 @@ class EN_us{
 			'email' => 'Email',
 			'close_buttom' => 'Close',
 			'request_password_buttom' => 'Request Password',
+			'actual_pass_tip' => 'Enter your current password',
+			'new_pass' => 'New Password',
+			'new_pass_tip' => 'Enter your new password',
+			'new_pass_again_tip' => 'Enter your new password again',
 		);
 
 
