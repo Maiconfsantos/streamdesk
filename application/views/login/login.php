@@ -13,16 +13,16 @@
           <div class="row justify-content-md-center">
             <div class="col-md-12 col-lg-6">
               <div class="form-group">
-                  <label for="usuario">Usuário</label>
-                  <input type="text" class="form-control" id="usuario" aria-describedby="usuario" name='usuario' placeholder="Digite o seu usuário">
+                  <label for="usuario"><?php echo($user)?></label>
+                  <input type="text" class="form-control" id="usuario" aria-describedby="usuario" name='usuario' placeholder="<?php echo($user_tip)?>">
               </div>
             </div>
           </div>
           <div class="row justify-content-md-center">
             <div class="col-md-12 col-lg-6">
               <div class="form-group">
-                  <label for="senha">Senha</label>
-                  <input type="password" class="form-control" id="senha" aria-describedby="senha" name='senha' placeholder="Digite a sua senha">
+                  <label for="senha"><?php echo($pass)?></label>
+                  <input type="password" class="form-control" id="senha" aria-describedby="senha" name='senha' placeholder="<?php echo($pass_tip)?>">
               </div>
             </div>
           </div>
@@ -42,10 +42,10 @@
 
     <div class="row justify-content-md-center">
       <div class="col-md-6 col-lg-3" id='divbutton'>
-        <button type="submit" class="btn btn-secondary" data-toggle="modal" data-target="#esqueceuSenhaModal">Esqueceu a senha</button>
+        <button type="submit" class="btn btn-secondary" data-toggle="modal" data-target="#esqueceuSenhaModal"><?php echo($forget_password)?></button>
       </div>
       <div class="col-md-6 col-lg-3" id='divbutton'>
-        <button type="submit" class="btn btn-secondary" data-toggle="modal" data-target="#alteraSenhaModal">Alterar Senha</button>
+        <button type="submit" class="btn btn-secondary" data-toggle="modal" data-target="#alteraSenhaModal"><?php echo($change_password)?></button>
       </div>
     </div>
   

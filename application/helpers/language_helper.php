@@ -64,6 +64,25 @@ function get_text($page,$lg){
 function login($base_text){
 	$data = array(
 		'login_button' => $base_text['login-button'],
+		'user' => $base_text['user'],
+		'user_tip' => $base_text['user_tip'],
+		'pass' => $base_text['pass'],
+		'pass_tip' => $base_text['pass_tip'],
+		'forget_password' => $base_text['forget_password'],
+		'change_password' => $base_text['change_password'],
+	);
+
+	return $data;
+}
+
+
+function modal_forget_password($base_text){
+	$data = array(
+		'forget_password' => $base_text['forget_password'],
+		'email_tip' => $base_text['email_tip'],
+		'email' => $base_text['email'],
+		'close_buttom' => $base_text['close_buttom'],
+		'request_password_buttom' => $base_text['request_password_buttom'],
 	);
 
 	return $data;

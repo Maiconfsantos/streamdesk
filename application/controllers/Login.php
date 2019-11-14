@@ -19,9 +19,10 @@ class Login extends CI_Controller{
 	 	url_trasform();	
 	 	
 	 	$text = get_text('login',$lg);
+	 	$text_modal_forget = get_text('modal_forget_password',$lg);
 
 	 	$this->load->template('login/login.php', $text);
-	 	$this->load->view('login/esqueceusenhamodal');
+	 	$this->load->view('login/esqueceusenhamodal',$text_modal_forget);
 	 	$this->load->view('login/alteraSenhaModal');
 	 }
 
