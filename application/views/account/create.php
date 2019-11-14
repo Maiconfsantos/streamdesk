@@ -24,7 +24,6 @@
       <small id="pass2Help" class="form-text text-muted"><?php echo($pass_again_tip)?></small>
     </div>
 
-    <button type="button" class="btn btn-secondary" data-dismiss="modal"><?php echo($close_buttom)?></button>
     <button type="submit" class="btn btn-primary"><?php echo($create_accounte_buttom)?></button>
   </form>
 </div>

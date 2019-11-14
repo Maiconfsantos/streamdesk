@@ -22,10 +22,10 @@ class EN_us{
 			'new_pass_again_tip' => 'Enter your new password again',
 			'create_account'=>'Sign Up',
 			'create_accounte_buttom' => 'Create account',
-			'new_email_tip' => 'Enter yout email',
+			'new_email_tip' => 'Enter your email',
 			'full_name' => 'Full name',
-			'full_name_tip' => 'Enter yout full name',
-			'pass_again_tip' => 'Enter yout password again',
+			'full_name_tip' => 'Enter your full name',
+			'pass_again_tip' => 'Enter your password again',
 			'not_equal_password_warning' => 'Passwords dont matches'
 		);
 
