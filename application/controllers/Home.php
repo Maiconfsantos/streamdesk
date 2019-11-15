@@ -15,12 +15,13 @@ class Home extends CI_Controller{
 
 	public function index(){
 		$usuario = $this->session->userdata('usuario');
-		$this->load->model('Sistemas_model');
-		$sistemas = $this->Sistemas_model->get_sistemas($usuario);
+		$this->load->model('Channel_model');
+		$channels = $this->Channel_model->get_channels_user($usuario);
 
 
-		$dados = array('sistemas' =>$sistemas,);
+		$dados = array('channels' =>$channels,);
 		
-		$this->load->template('home/home',$dados);
+
+		$this->load->template('default/sidebar',$dados);
 	}
 }
