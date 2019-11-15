@@ -9,6 +9,6 @@
 new Twitch.Embed("video", {
   width: 1300,
   height: 600,
-  channel: "rakin"
+  channel: "<?php echo($channel['name'])?>"
 });
 </script>

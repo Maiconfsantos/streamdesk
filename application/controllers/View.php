@@ -15,7 +15,11 @@ class View extends CI_Controller{
 
 		$channel = $this->Channel_model->get_channel($id);
 
-		$this->load->view('view/channel',$channel);
+		$dados = array(
+			'channel' => $channel
+		);
+
+		$this->load->view('view/channel',$dados);
 	}
 }
 ?>
