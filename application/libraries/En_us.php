@@ -10,7 +10,7 @@ class EN_us{
 			'user_tip' => 'Enter your user',
 			'pass' => 'Password',
 			'pass_tip' => 'Enter your Password',
-			'forget_password' => 'Forget your password?',
+			'forget_password' => 'Forgot your password?',
 			'change_password' => 'Change password',
 			'email_tip' => 'Enter the email of your account',
 			'email' => 'Email',
