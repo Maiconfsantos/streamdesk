@@ -14,14 +14,7 @@ class Home extends CI_Controller{
 	}
 
 	public function index(){
-		$usuario = $this->session->userdata('usuario');
-		$this->load->model('Channel_model');
-		$channels = $this->Channel_model->get_channels_user($usuario);
-
-
-		$dados = array('channels' =>$channels,);
-		
-
-		$this->load->template('default/sidebar',$dados);
+		$this->load->helper('sidebar_helper');
+		prep_sidebar();
 	}
 }

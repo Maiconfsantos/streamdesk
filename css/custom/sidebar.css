@@ -1,14 +1,23 @@
 #sidebar{
 	background: #484d53;
-	width: 5%;
+	width: 3%;
 	height: 90%;
 	position: fixed;
 }
 
 .channel_logo{
-	height: 7%;
-	width: 90%;
+	width: 80%;
 	border-radius: 50%;
 	margin-top: 20%;
-	margin-left: 5%;
+	margin-left: 10%;
+}
+
+.inativo{
+	filter: grayscale(100%);
+}
+
+#add_button{
+	border-radius: 50%;
+	background-color: white;
+	width: 80%;
 }
