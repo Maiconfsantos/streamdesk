@@ -4,8 +4,10 @@
 
 <div id='sidebar'>
 	<?php foreach($channels as $value):?>
-		<a href='<?=base_url()?>View/channel/<?php echo($value['id'])?>'>
-		<?php echo($value['name'])?></a>
+		<a href='<?=base_url()?>View/channel/<?php echo($value->login)?>'>
+			<img class="channel_logo" alt="<?php echo($value->login)?>" src="<?php echo($value->profile_image_url)?>">
+		</a>
 		<br>
 	<?php endforeach ?>
 </div>
+

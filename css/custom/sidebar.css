@@ -4,3 +4,11 @@
 	height: 90%;
 	position: fixed;
 }
+
+.channel_logo{
+	height: 7%;
+	width: 90%;
+	border-radius: 50%;
+	margin-top: 20%;
+	margin-left: 5%;
+}

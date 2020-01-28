@@ -1,4 +1,7 @@
 <link rel="stylesheet" type="text/css" href="<?=css_url()?>custom/view_channel.css">
+
+<script src="<?=js_url()?>channel.js"></script>
+
 <div id="video"></div>
 
 <!-- Load the Twitch embed script -->
@@ -12,3 +15,4 @@ new Twitch.Embed("video", {
   channel: "<?php echo($channel['name'])?>"
 });
 </script>
+
