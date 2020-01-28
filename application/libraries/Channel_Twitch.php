@@ -9,9 +9,10 @@ class Channel_Twitch{
     }
 
     function get_data(){
+
         $ch = curl_init("https://api.twitch.tv/helix/users?login=". $this->nome);
 		$params = array(
-			'Client-ID: 2lpi7xfzdpz99dayhy7w2d74jeotbi',
+			'Client-ID: '.TWITCH_CLIENT_ID,
 		);
         curl_setopt($ch, CURLOPT_HTTPHEADER, $params);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -25,7 +26,7 @@ class Channel_Twitch{
     function check_live(){
         $ch = curl_init("https://api.twitch.tv/helix/streams?user_login=". $this->nome);
 		$params = array(
-			'Client-ID: 2lpi7xfzdpz99dayhy7w2d74jeotbi',
+			'Client-ID: '.TWITCH_CLIENT_ID,
 		);
         curl_setopt($ch, CURLOPT_HTTPHEADER, $params);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
