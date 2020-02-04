@@ -6,7 +6,7 @@
         <script src="<?=base_url()?>js/jquery.js"></script>
         <script src="<?=js_url()?>login.js"></script>
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-       
+        <script src="<?=base_url()?>js/bootstrap.js"></script>
 
         <script data-ad-client="ca-pub-5877486646197736" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
