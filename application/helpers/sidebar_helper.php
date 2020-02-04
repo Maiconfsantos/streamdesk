@@ -4,11 +4,12 @@ function prep_sidebar(){
     $ci = get_instance();
 
     $ci->load->library('Channel_Twitch');
-	$ci->load->model('User_model');
+    $ci->load->model('User_model');
+    $ci->load->model('Plataformas_model');
 
     $usuario = $ci->session->userdata('usuario');
     $channels = $ci->User_model->get_channels($usuario);
-    
+    $plataformas = $ci->Plataformas_model->get_plataformas();
     
     $ativo = array();
     $inativo = array();
@@ -28,7 +29,12 @@ function prep_sidebar(){
         'ativos' => $ativo,
     );
 
+    $dados2 = array(
+        'plataformas' => $plataformas
+    );
+
     $ci->load->template('default/sidebar',$dados);
+    $ci->load->view('default/sidebar_modal_add_channel',$dados2);
 }
 
 ?>

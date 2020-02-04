@@ -8,4 +8,9 @@ class Channel_model extends CI_model{
 				 ->where('name',$name);
 		return $this->db->get()->row_array();
 	}
+
+	public function insert_channel($data){
+		$this->db->insert('channel', $data);
+	}
+
 }

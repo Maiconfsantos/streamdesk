@@ -3,6 +3,17 @@
 
 
 <div id='sidebar'>
+	<button 
+		type="button" 
+		class="btn btn-info channel_logo" 
+		title="Adicionar Canal"
+		data-toggle="modal"
+		data-target="#adicionarCanal"
+	>
+		+
+	</button>
+
+	<hr>
 
 	<?php foreach($ativos as $value):?>
 		<a href='<?=base_url()?>View/channel/<?php echo($value->login)?>'>
@@ -10,6 +21,8 @@
 		</a>
 		<br>
 	<?php endforeach ?>
+
+	<hr>
 
 	<?php foreach($inativos as $value):?>
 		<a href='<?=base_url()?>View/channel/<?php echo($value->login)?>'>

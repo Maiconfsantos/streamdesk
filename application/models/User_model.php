@@ -45,6 +45,18 @@ class User_model extends CI_model{
 		return $this->db->get()->result_array();
 	}
 
+	public function insert_channel($data){
+		$this->db->insert('usuarios_channel', $data);
+	}
+
+	public function get_canal($usuario,$channel){
+		$this->db->select('*')
+				 ->from('usuarios_channel')
+				 ->where('id_channel',$channel)
+				 ->where('id_usuario',$usuario);
+				
+		return $this->db->get()->result_array();
+	}
 
 	
 
