@@ -8,6 +8,8 @@
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <script src="<?=base_url()?>js/bootstrap.js"></script>
 
+        <script data-ad-client="ca-pub-5877486646197736" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
     </head>
 
     <body>
