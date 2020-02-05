@@ -14,27 +14,30 @@
     </div>
 
     <div class="container content">
+        <div>
+            <h1>
+                Precisando de Ajuda?
+            </h1>
+            <p>
+                Nesta página você encontrará informações sobre a utilização da plataforma StreamDesk.
+            </p>
+        </div>
+
+        <hr>
+
         <div id='add_channel_twitch'>
-            text
+            <h2>
+                Adicionando um canal da Twitch
+            </h2>
+            <P>Após realizar o seu login em nossa plataforma você terá a capacidade de adicionar canais da Twitch ao seu perfil da StreamDesk.</p>
+            <P>Primeiramente, clique no botão 'Adicionar Canal', na parte superior esquerda da página.</p>
+            <img src="<?=asset_url()?>/imgs/add_channel_1.png") " class="d-inline-block align-top" alt="">
+            <p>Após isto você irá entrar no menu de inserção de canal, aonde deverá informar o nome do canal e selecionar a plataforma Twitch.</P>
+            <p>O nome do canal de ser exatamente igual ao nome cadastrado na Twitch, normalmente localizado na URL da Twitch quando você o está assistindo</p>
+            <p>Ao assistir o canal que deseja na twitch, a URL será algo como <i>https://www.twitch.tv/</i><b>canalDesejado</b>, sendo o nome do canal exatamente o <b>canalDesejado</b>.</p>
         </div>
         <div id='add_channel_facebook'>
-            text<br>
-            text<br>
-            text<br>
-            text<br>
-            text<br>
-            text<br>
-            text<br>
-            text<br>
-            text<br>
-            text<br>
-            text<br>
-            text<br>
-            text<br>
-            text<br>
-            text<br>
-            text<br>
-            text<br>
+
         </div>
     </div>
 </div>
