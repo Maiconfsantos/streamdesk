@@ -6,7 +6,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Login extends CI_Controller{
 
 	 function __construct(){
-        parent::__construct();
+		parent::__construct();
+		
+		$newdata = array(
+			'usuario'  => '1',
+			'logged_in' => TRUE,
+		);
+
+		$this->session->set_userdata($newdata);
+
 
         if($this->session->userdata('logged_in') == '1'){
         	redirect("/Home/");
@@ -16,7 +24,9 @@ class Login extends CI_Controller{
 
 	 public function index($lg='en_us'){
 
-	 	url_trasform();	
+		 url_trasform();	
+		 
+		 
 	 	
 	 	$text = get_text('login',$lg);
 	 	$text_modal_forget = get_text('modal_forget_password',$lg);

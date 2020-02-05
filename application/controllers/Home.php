@@ -16,5 +16,8 @@ class Home extends CI_Controller{
 	public function index(){
 		$this->load->helper('sidebar_helper');
 		prep_sidebar();
+
+
+		$this->load->view('home/home.php');
 	}
 }

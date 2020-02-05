@@ -1,0 +1,25 @@
+.vertical_lane{ 
+  
+    border:         none;
+    border-left:    1px solid hsla(200, 10%, 50%,100);
+    height:         60vh;
+    width:          1px;       
+}
+
+#help_IMG{
+    opacity: 0.3;
+    height: 40vh;
+    
+}
+
+#help_IMG:hover{
+    opacity: 1;
+    height: 50vh;
+
+}
+
+@media only screen and (max-width: 980px){
+    .vertical_lane{
+        visibility: hidden;
+    }
+}

@@ -50,7 +50,7 @@
     ?>
 
     <nav class="navbar navbar-dark bg-dark">
-  <a id='text-navbar' class="navbar-brand" href="#" align="center">
+  <a id='text-navbar' class="navbar-brand" href="<?php echo(BASE_URL)?>Home" align="center">
     <img src="<?=asset_url()?>/imgs/logo-cnec-transparente.png") " class="d-inline-block align-top" alt="">
     Stream Desk</a>
 
