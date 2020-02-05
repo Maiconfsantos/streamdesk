@@ -17,5 +17,10 @@ class View extends CI_Controller{
 
 		$this->load->view('view/channel',$dados);
 	}
+
+
+	public function help(){
+		$this->load->template('view/help');
+	}
 }
 ?>
