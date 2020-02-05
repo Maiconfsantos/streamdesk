@@ -90,7 +90,7 @@ define('TWITCH_CLIENT_ID', '2lpi7xfzdpz99dayhy7w2d74jeotbi');
 
 
 if($_SERVER['HTTP_HOST']=='streamdesk.net')
-    define('BASE_URL','http://'.$_SERVER['HTTP_HOST'].'/');
+    define('BASE_URL','https://'.$_SERVER['HTTP_HOST'].'/');
 
 else 
     define('BASE_URL','http://'.$_SERVER['HTTP_HOST'].'/sd/');
