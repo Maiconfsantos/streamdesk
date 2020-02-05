@@ -14,7 +14,6 @@ class View extends CI_Controller{
 			'channel' => $channel
 		);
 
-
 		$this->load->view('view/channel',$dados);
 	}
 

@@ -5,14 +5,43 @@
 <div id="video"></div>
 
 <!-- Load the Twitch embed script -->
-<script src="https://embed.twitch.tv/embed/v1.js"></script>
 
-<!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
-<script type="text/javascript">
-var player = new Twitch.Embed("video", {
-  width: 1300,
-  height: 600,
-  channel: "<?php echo($channel['name'])?>"
-});
-</script>
+
+<?php if($channel['plataform']=='1') : ?>
+  <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+  <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+  <script type="text/javascript">
+  var player = new Twitch.Embed("video", {
+    width: 1300,
+    height: 600,
+    channel: "<?php echo($channel['name'])?>"
+  });
+  </script>
+<?php endif; ?>
+
+
+<?php if($channel['plataform']=='2') : ?>
+  <script src="<?=js_url()?>channel_facebook.js"></script>
+  <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
+  <div  
+    class="fb-video" 
+    data-href="https://www.facebook.com/<?= $channel['name']?>/live" 
+    data-width="1000" 
+    data-allowfullscreen="true"
+    id="video"
+  > 
+  </div>
+<?php endif; ?>
+
+
+
+  
+
+  <!-- Your embedded video player code -->
+
+	
+
+	
+
 
