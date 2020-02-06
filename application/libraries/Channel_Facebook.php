@@ -44,7 +44,7 @@ class Channel_Facebook{
           $this->$imagem = $graphNode['location'];
 
           ini_set('user_agent', 'Netscape');
-          ini_set('default_charset', 'utf-8');
+          ini_set('HTTP_ACCEPT_LANGUAGE', 'pt-br');
 
           $html = file_get_contents("https://www.facebook.com/$this->display_name/videos");
           
