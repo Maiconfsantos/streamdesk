@@ -33,10 +33,15 @@ class Channel_Twitch{
 
         $data = json_decode(curl_exec($ch));
 
-        if($data->data){
-            return true;
+        try {
+            if(empty($data)){
+                return true;
+            }
+            else return false;
+        } catch (Exception $e){
+            return false;
         }
-        else return false;
+        
     }
 }
 
