@@ -7,14 +7,8 @@ class Login extends CI_Controller{
 
 	 function __construct(){
 		parent::__construct();
-		
-		$newdata = array(
-			'usuario'  => '1',
-			'logged_in' => TRUE,
-		);
 
-		$this->session->set_userdata($newdata);
-
+		redirect("/Home/");
 
         if($this->session->userdata('logged_in') == '1'){
         	redirect("/Home/");

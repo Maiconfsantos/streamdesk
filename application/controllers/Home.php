@@ -9,7 +9,7 @@ class Home extends CI_Controller{
 		parent::__construct();
 
 		if($this->session->userdata('logged_in') != '1'){
-			redirect("/");
+			//redirect("/");
 		}
 	}
 
