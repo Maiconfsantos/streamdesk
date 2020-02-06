@@ -8,6 +8,7 @@ function prep_sidebar(){
     $ci->load->model('User_model');
     $ci->load->model('Plataformas_model');
 
+
     $usuario = $ci->session->userdata('usuario');
     $channels = $ci->User_model->get_channels($usuario);
     $plataformas = $ci->Plataformas_model->get_plataformas();
@@ -19,17 +20,19 @@ function prep_sidebar(){
 
         if($channel['plataform']=='1'){
             $ct[$key] = new Channel_Twitch($channel['name']);
-            $ct[$key] = $ct[$key]->get_data();
+            $ct[$key]->get_data();
 
-            if($ct[$key]->live)
+           // print_r($ct[$key]);
+            
+            if($ct[$key]->online)
                 array_push($ativo, $ct[$key]);
             else
                 array_push($inativo, $ct[$key]);
         }
 
-        if($channel['plataform']=='3'){
+        if($channel['plataform']=='2'){
             $cf[$key] = new Channel_Facebook($channel['name']);
-            $cf[$key] = $cf[$key]->get_data();
+            $cf[$key]->get_data();
 
             if($cf[$key]->live)
                 array_push($ativo, $cf[$key]);

@@ -3,39 +3,59 @@
 class Channel_Facebook{   
 
     function __construct($name='name'){
-        $nome = 'nome';
+
+        $nome = 'display_name';
         $this->$nome = $name;
+
+        $login = 'login';
+        $this->$login = $name;
     }
+
 
     function get_data(){
 
+        $fb = new Facebook\Facebook([
+            'app_id' => '462971241004562',
+            'app_secret' => 'e3fca6e744432da10c7b7e8f2e10d02c',
+            'default_graph_version' => 'v2.10',
+            ]);
+        
 
-        $ch = curl_init("https://graph.facebook.com/v6.0/painkamirazer/picture");
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        $accessToken = new Facebook\Authentication\AccessToken('462971241004562|e3fca6e744432da10c7b7e8f2e10d02c');
+        
+        $token = (string) $accessToken;
 
-        $data = json_decode(curl_exec($ch));
+        try {
+            // Returns a `FacebookFacebookResponse` object
+            $response = $fb->get(
+              "/$this->display_name/picture",
+              $token
+            );
+          } catch(FacebookExceptionsFacebookResponseException $e) {
+            echo 'Graph returned an error: ' . $e->getMessage();
+            exit;
+          } catch(FacebookExceptionsFacebookSDKException $e) {
+            echo 'Facebook SDK returned an error: ' . $e->getMessage();
+            exit;
+          }
+          $graphNode = $response->getHeaders();
 
-        print_r($data);
-        $data->data[0]->live = $this->check_live();
+          $imagem = 'profile_image_url';
+          $this->$imagem = $graphNode['location'];
 
-        return($data->data[0]);
+          ini_set('user_agent', 'Netscape');
+
+          $html = file_get_contents("https://www.facebook.com/$this->display_name/videos");
+          
+          $online = 'live';
+          if(strpos($html, 'Ao vivo')){
+            $this->$online = true;
+          }
+          else $this->$online = false;
     }
 
-    function check_live(){
-        $ch = curl_init("https://api.twitch.tv/helix/streams?user_login=". $this->nome);
-		$params = array(
-			'Client-ID: '.TWITCH_CLIENT_ID,
-		);
-        curl_setopt($ch, CURLOPT_HTTPHEADER, $params);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
-        $data = json_decode(curl_exec($ch));
-
-        if($data->data){
-            return true;
-        }
-        else return false;
-    }
+   
 }
 
 ?>
