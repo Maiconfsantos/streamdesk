@@ -11,7 +11,8 @@
 		"source": "https://github.com/bcit-ci/CodeIgniter"
 	},
 	"require": {
-		"php": ">=5.4.8"
+		"php": ">=5.4.8",
+		"facebook/graph-sdk": "^5.7"
 	},
 	"suggest": {
 		"paragonie/random_compat": "Provides better randomness in PHP 5.x"

@@ -21,5 +21,10 @@ class View extends CI_Controller{
 	public function help(){
 		$this->load->template('view/help');
 	}
+
+
+	public function politica_privacidade(){
+		$this->load->template('view/politica_privacidade');
+	}
 }
 ?>

@@ -1,7 +1,6 @@
 <?php
 
-class Channel_Facebook{
-    
+class Channel_Facebook{   
 
     function __construct($name='name'){
         $nome = 'nome';
