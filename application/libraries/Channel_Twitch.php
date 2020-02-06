@@ -18,12 +18,12 @@ class Channel_Twitch{
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
         $data = json_decode(curl_exec($ch));
-        $data->data[0]->live = $this->check_live();
+        $data->data[0]->live = $this->check_live($data->data[0]);
 
         return($data->data[0]);
     }
 
-    function check_live(){
+    function check_live($data){
         $ch = curl_init("https://api.twitch.tv/helix/streams?user_login=". $this->nome);
 		$params = array(
 			'Client-ID: '.TWITCH_CLIENT_ID,
@@ -31,9 +31,9 @@ class Channel_Twitch{
         curl_setopt($ch, CURLOPT_HTTPHEADER, $params);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
-        $this->test_live = json_decode(curl_exec($ch));
+        $data->check_live = json_decode(curl_exec($ch));
 
-        if(empty($this->test_live)){
+        if($data->check_live->data){
             return true;
         }
         else return false;
