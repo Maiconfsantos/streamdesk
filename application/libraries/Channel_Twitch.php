@@ -23,8 +23,10 @@ class Channel_Twitch{
         $data = json_decode(curl_exec($ch));
 
         $imagem = 'profile_image_url';
-        $this->$imagem = $data->data[0]->profile_image_url;
-        
+
+        if($data)
+            $this->$imagem = $data->data[0]->profile_image_url;
+
         $this->check_live();
 
     }
