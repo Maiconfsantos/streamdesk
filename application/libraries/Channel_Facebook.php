@@ -44,11 +44,12 @@ class Channel_Facebook{
           $this->$imagem = $graphNode['location'];
 
           ini_set('user_agent', 'Netscape');
+          ini_set('default_charset', 'utf-8');
 
           $html = file_get_contents("https://www.facebook.com/$this->display_name/videos");
           
           $online = 'live';
-          if(strpos($html, 'Ao vivo') || strpos($html, 'live')){
+          if(strpos($html, 'Ao vivo')){
             $this->$online = true;
           }
           else $this->$online = false;
