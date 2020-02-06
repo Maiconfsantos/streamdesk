@@ -31,16 +31,12 @@ class Channel_Twitch{
         curl_setopt($ch, CURLOPT_HTTPHEADER, $params);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
-        $data = json_decode(curl_exec($ch));
+        $this->test_live = json_decode(curl_exec($ch));
 
-        try {
-            if(empty($data)){
-                return true;
-            }
-            else return false;
-        } catch (Exception $e){
-            return false;
+        if(empty($this->test_live)){
+            return true;
         }
+        else return false;
         
     }
 }
