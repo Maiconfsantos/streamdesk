@@ -48,7 +48,7 @@ class Channel_Facebook{
           $html = file_get_contents("https://www.facebook.com/$this->display_name/videos");
           
           $online = 'live';
-          if(strpos($html, 'Ao vivo')){
+          if(strpos($html, 'Ao vivo') || strpos($html, 'live')){
             $this->$online = true;
           }
           else $this->$online = false;
