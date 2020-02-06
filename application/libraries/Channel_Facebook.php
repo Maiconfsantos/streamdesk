@@ -44,9 +44,17 @@ class Channel_Facebook{
           $this->$imagem = $graphNode['location'];
 
           ini_set('user_agent', 'Netscape');
-          ini_set('HTTP_ACCEPT_LANGUAGE', 'pt-br');
 
-          $html = file_get_contents("https://www.facebook.com/$this->display_name/videos");
+          $opts = array(
+            'http'=>array(
+              'method'=>"GET",
+              'header'=>"Accept-language: pt-BR\r\n"
+            )
+          );
+          
+          $context = stream_context_create($opts);
+
+          $html = file_get_contents("https://www.facebook.com/$this->display_name/videos",false,$context);
     
 
           $online = 'live';
