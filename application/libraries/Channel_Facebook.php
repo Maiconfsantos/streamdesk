@@ -47,7 +47,8 @@ class Channel_Facebook{
           ini_set('HTTP_ACCEPT_LANGUAGE', 'pt-br');
 
           $html = file_get_contents("https://www.facebook.com/$this->display_name/videos");
-          
+    
+
           $online = 'live';
           if(strpos($html, 'Ao vivo')){
             $this->$online = true;

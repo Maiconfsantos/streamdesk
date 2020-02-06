@@ -45,9 +45,11 @@ class Facebook extends CI_Controller{
 
 
     public function teste_library(){
-        $this->load->library('Channel_Facebook');
+      
+      $this->load->library('Channel_Facebook');
 
-
+      print_r($_SERVER['HTTP_ACCEPT_LANGUAGE']);
+      
         $channel = new Channel_Facebook('painkamirazer');
         $data = $channel->get_data();
 
