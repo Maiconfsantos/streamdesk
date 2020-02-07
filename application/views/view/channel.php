@@ -24,13 +24,15 @@
 <?php if($channel['plataform']=='2') : ?>
   <script src="<?=js_url()?>channel_facebook.js"></script>
   <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
-  <div  
-    class="fb-video" 
-    data-href="https://www.facebook.com/<?= $channel['name']?>/live" 
-    data-width="1000" 
-    data-allowfullscreen="true"
-    id="video"
-  > 
+  <div  style="width: 70%" id='player_facebook'>
+    <div  
+      class="fb-video" 
+      data-href="https://www.facebook.com/<?= $channel['name']?>/live" 
+      data-width="auto" 
+      data-allowfullscreen="true"
+      id="video"
+    > 
+    </div>
   </div>
 <?php endif; ?>
 
