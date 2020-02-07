@@ -18,6 +18,7 @@
     channel: "<?php echo($channel['name'])?>"
   });
   </script>
+
 <?php endif; ?>
 
 
