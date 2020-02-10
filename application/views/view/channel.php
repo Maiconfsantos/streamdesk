@@ -2,7 +2,9 @@
 
 <script src="<?=js_url()?>channel.js"></script>
 
-<div id="video"></div>
+<div  style="width: 90%" id='player_facebook'>
+  <div id="video"></div>
+</div>
 
 <!-- Load the Twitch embed script -->
 
@@ -13,8 +15,8 @@
   <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
   <script type="text/javascript">
   var player = new Twitch.Embed("video", {
-    width: 1300,
-    height: 600,
+    width: '100%',
+    height: '80%',
     channel: "<?php echo($channel['name'])?>"
   });
   </script>
