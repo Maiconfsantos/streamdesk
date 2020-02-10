@@ -24,10 +24,10 @@ class Channel_Twitch{
 
         $imagem = 'profile_image_url';
 
-        if($data)
+        if($data->data[0]){
             $this->$imagem = $data->data[0]->profile_image_url;
-
-        $this->check_live();
+            $this->check_live();
+        }
 
     }
 
