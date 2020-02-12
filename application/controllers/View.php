@@ -3,6 +3,16 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class View extends CI_Controller{
+
+	function __construct(){
+		parent::__construct();
+
+		if($this->session->userdata('logged_in') != '1'){
+			//redirect("/");
+		}
+	}
+
+	
 	public function channel($name){
 		$this->load->model('Channel_model');
 		$this->load->helper('sidebar_helper');
