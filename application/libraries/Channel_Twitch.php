@@ -24,7 +24,7 @@ class Channel_Twitch{
 
         $imagem = 'profile_image_url';
 
-        if(is_object($data)){
+        if(property_exists($data->data[0],'profile_image_url')){
             $this->$imagem = $data->data[0]->profile_image_url;
             $this->check_live();
         }

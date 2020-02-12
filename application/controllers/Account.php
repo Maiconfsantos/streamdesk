@@ -29,7 +29,7 @@ class Account extends CI_Controller{
 
 			$this->User_model->create_account($data);
 
-			$this->session->set_tempdata('success','Conta criada com sucesso, verifique o seu email para ativa-la',5);
+			$this->session->set_tempdata('success','Conta criada com sucesso',5);
 
 			redirect(base_url());
 		}
